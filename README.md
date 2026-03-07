@@ -4,7 +4,7 @@
 
 Gate for AI is an AI-native crypto infrastructure that enables AI agents to trade, analyze markets, manage wallets, and query on-chain data through MCP (Model Context Protocol) and modular AI Skills. Integrate ChatGPT, Claude, and OpenClaw with CEX + DEX capabilities.
 
-🌐 **Languages**: [English](README.md) | [简体中文](README_zh.md)
+🌐 **Languages**: [English](README.md) | [简体中文](README_ZH.md)
 
 ---
 
@@ -44,7 +44,7 @@ Crypto news and updates capabilities provided through MCP & Skills, supporting A
 **Comprehensive On-chain Data Query**
 Crypto information query capabilities including coin profiles, project information, block data, and address information, providing Agents with structured information and on-chain data access.
 
-📖 **Full Documentation**: [English](README.md) | [中文](README_zh.md)
+📖 **Full Documentation**: [English](README.md) | [中文](README_ZH.md)
 
 ---
 
@@ -92,8 +92,9 @@ Available skills for crypto trading and market analysis:
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [gate-exchange-market](https://github.com/gate/gate-skills/tree/main/skills/gate-exchange-market) | Single-coin deep analysis & multi-coin screening | ✅ Active |
-| [gate-mcp-installer](https://github.com/gate/gate-skills/tree/main/skills/gate-mcp-installer) | One-click Gate MCP setup & configuration | ✅ Active |
+| [gate-exchange-market](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-market) | Single-coin deep analysis & multi-coin screening | ✅ Active |
+| [gate-trading](https://github.com/gate/gate-skills/tree/master/skills/gate-trading) | Derivatives monitoring: basis, funding rate, liquidation | ✅ Active |
+| [gate-mcp-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-installer) | One-click Gate MCP setup & configuration | ✅ Active |
 
 ### How Skills Work
 
@@ -142,7 +143,7 @@ Available skills for crypto trading and market analysis:
 ## Documentation
 
 - 📖 [Full Documentation (English)](README.md)
-- 📖 [完整文档 (中文)](README_zh.md)
+- 📖 [完整文档 (中文)](README_ZH.md)
 - 🔧 [Gate MCP Server](https://github.com/gate/gate-mcp)
 - 🛠️ [Gate Skills](https://github.com/gate/gate-skills)
 

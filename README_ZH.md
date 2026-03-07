@@ -44,7 +44,7 @@ Gate for AI 由覆盖整个加密生态系统的五大核心模块组成：
 **全面的链上数据查询**
 加密信息查询能力，包括币种资料、项目信息、区块数据与地址信息，为 Agent 提供结构化信息与链上数据访问。
 
-📖 **完整文档**: [English](README.md) | [中文](README_zh.md)
+📖 **完整文档**: [English](README.md) | [中文](README_ZH.md)
 
 ---
 
