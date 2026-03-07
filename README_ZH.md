@@ -4,7 +4,7 @@
 
 Gate for AI 是一个 AI 原生加密基础设施，让 AI Agent 能够进行交易、分析行情、管理钱包和查询链上数据。通过 MCP（模型上下文协议） 和模块化 AI Skills，集成 ChatGPT, Claude, 和 OpenClaw ，获得 CEX + DEX全部能力。
 
-**官方网站**: [https://www.gate.com/zh/gate-for-ai](https://www.gate.com/zh/gate-for-ai)
+**官方网站**: <a href="https://www.gate.com/zh/gate-for-ai" target="_blank">https://www.gate.com/zh/gate-for-ai</a>
 
 🌐 **语言**: [English](README.md) | **简体中文**
 
@@ -133,7 +133,7 @@ Gate MCP 服务器为 AI 智能体提供 20 多个交易和市场数据工具：
 
 ## 资源
 
-- **网站**: [https://www.gate.com/gate-for-ai](https://www.gate.com/gate-for-ai)
+- **网站**:  <a href="https://www.gate.com/gate-for-ai" target="_blank">https://www.gate.com/gate-for-ai</a>
 - **Twitter**: [@gate_io](https://twitter.com/gate_io)
 - **开发者支持**: `developer@gate.com`
 

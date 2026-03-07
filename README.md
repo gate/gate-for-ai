@@ -4,7 +4,7 @@
 
 Gate for AI is an AI-native crypto infrastructure that enables AI agents to trade, analyze markets, manage wallets, and query on-chain data through MCP (Model Context Protocol) and modular AI Skills. Integrate ChatGPT, Claude, and OpenClaw with CEX + DEX capabilities.
 
-**Website**: [https://www.gate.com/gate-for-ai](https://www.gate.com/gate-for-ai)
+**Website**: <a href="https://www.gate.com/gate-for-ai" target="_blank">https://www.gate.com/gate-for-ai</a>
 
 🌐 **Languages**: [English](README.md) | [简体中文](README_ZH.md)
 
@@ -152,7 +152,7 @@ Available skills for crypto trading and market analysis:
 
 ## Resources
 
-- **Website**: [https://www.gate.com/gate-for-ai](https://www.gate.com/gate-for-ai)
+- **Website**: <a href="https://www.gate.com/gate-for-ai" target="_blank">https://www.gate.com/gate-for-ai</a>
 - **Twitter**: [@gate_io](https://twitter.com/gate_io)
 - **Developer Support**: `developer@gate.com`
 
