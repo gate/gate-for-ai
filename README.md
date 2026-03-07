@@ -94,7 +94,10 @@ Available skills for crypto trading and market analysis:
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [gate-exchange-market](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-market) | Single-coin deep analysis & multi-coin screening | ✅ Active |
+| [gate-exchange-marketanalysis](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-marketanalysis) | Market tape analysis: liquidity, momentum, liquidation, funding arbitrage, basis, manipulation risk, order book explainer, slippage simulation, breakout, and weekend vs weekday | ✅ Active |
+| [gate-exchange-futures](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-futures) | USDT perpetual futures trading: open/close position, cancel/amend order | ✅ Active |
+| [gate-exchange-spot](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-spot) | Gate spot trading: buy/sell, order management, account queries, and asset swaps | ✅ Active |
+| [gate-dex-market](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-market) | Gate Wallet DEX market data: K-line, transaction stats, liquidity, token info, rankings, security audit, new token discovery | ✅ Active |
 | [gate-mcp-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-installer) | One-click Gate MCP setup & configuration | ✅ Active |
 
 ### How Skills Work

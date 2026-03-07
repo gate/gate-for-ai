@@ -82,8 +82,11 @@ Gate MCP 服务器为 AI 智能体提供 20 多个交易和市场数据工具：
 
 | 技能 | 描述 | 状态 |
 |------|------|------|
-| [gate-exchange-market](https://github.com/gate/gate-skills/tree/main/skills/gate-exchange-market) | 单币种深度分析和多币种筛选 | ✅ 活跃 |
-| [gate-mcp-installer](https://github.com/gate/gate-skills/tree/main/skills/gate-mcp-installer) | 一键 Gate MCP 设置和配置 | ✅ 活跃 |
+| [gate-exchange-marketanalysis](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-marketanalysis) | 市场盘口分析：流动性、动量、清算、资金套利、基差、操纵风险、订单簿解释、滑点模拟、突破及周末与工作日对比 | ✅ 活跃 |
+| [gate-exchange-futures](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-futures) | USDT 永续合约交易：开仓/平仓、取消/修改订单 | ✅ 活跃 |
+| [gate-exchange-spot](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-spot) | Gate 现货交易：买入/卖出、订单管理、账户查询及资产兑换 | ✅ 活跃 |
+| [gate-dex-market](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-market) | Gate 钱包 DEX 市场数据：K 线、交易统计、流动性、代币信息、排名、安全审计、新代币发现 | ✅ 活跃 |
+| [gate-mcp-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-installer) | 一键 Gate MCP 设置和配置 | ✅ 活跃 |
 
 📖 **完整技能文档**: [Gate 技能](https://github.com/gate/gate-skills)
 
