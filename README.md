@@ -93,7 +93,6 @@ Available skills for crypto trading and market analysis:
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [gate-exchange-market](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-market) | Single-coin deep analysis & multi-coin screening | ✅ Active |
-| [gate-trading](https://github.com/gate/gate-skills/tree/master/skills/gate-trading) | Derivatives monitoring: basis, funding rate, liquidation | ✅ Active |
 | [gate-mcp-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-installer) | One-click Gate MCP setup & configuration | ✅ Active |
 
 ### How Skills Work
@@ -154,12 +153,6 @@ Available skills for crypto trading and market analysis:
 - **Website**: [https://www.gate.com/gate-for-ai](https://www.gate.com/gate-for-ai)
 - **Twitter**: [@gate_io](https://twitter.com/gate_io)
 - **Developer Support**: `developer@gate.com`
-
----
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ---
 
