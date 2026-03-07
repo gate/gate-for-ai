@@ -2,7 +2,7 @@
 
 🤖 **AI 原生加密基础设施**
 
-Gate for AI 是一个 AI 原生加密基础设施，通过 MCP（模型上下文协议）和模块化 AI 技能，使 AI 智能体能够进行交易、分析市场、管理钱包和查询链上数据。
+Gate for AI 是一个 AI 原生加密基础设施，让 AI Agent 能够进行交易、分析行情、管理钱包和查询链上数据。通过 MCP（模型上下文协议） 和模块化 AI Skills，集成 ChatGPT, Claude, 和 OpenClaw ，获得 CEX + DEX全部能力。
 
 🌐 **语言**: [English](README.md) | **简体中文**
 
@@ -10,7 +10,7 @@ Gate for AI 是一个 AI 原生加密基础设施，通过 MCP（模型上下文
 
 ## 概述
 
-Gate for AI 赋予 ChatGPT、Claude 和 OpenClaw 等 AI 智能体无缝访问 CEX（中心化交易所）和 DEX（去中心化交易所）的能力。通过模型上下文协议（MCP）和模块化 AI 技能，AI 智能体可以：
+Gate for AI 赋予 Claude Code、OpenClaw、Codex、ChatGPT 和 Cursor 等 AI 智能体无缝访问 CEX（中心化交易所）和 DEX（去中心化交易所）的能力。通过模型上下文协议（MCP）和模块化 AI 技能，AI 智能体可以：
 
 - 📈 **交易** - 在现货和期货市场执行交易
 - 🔍 **分析** - 执行深度市场分析和筛选
@@ -24,21 +24,33 @@ Gate for AI 赋予 ChatGPT、Claude 和 OpenClaw 等 AI 智能体无缝访问 CE
 
 Gate for AI 由覆盖整个加密生态系统的五大核心模块组成：
 
-| 模块 | 描述 | 主要特性 |
-|------|------|----------|
-| **Gate Exchange for AI** | CEX 交易智能 | 现货和合约市场、资金费率、强平数据 |
-| **Gate DEX for AI** | DEX 聚合（即将推出） | 多 DEX 路由、流动性池、收益耕作 |
-| **Gate Wallet for AI** | 钱包管理（即将推出） | 多链跟踪、安全分析、盈亏统计 |
-| **Gate News for AI** | 新闻与情绪（即将推出） | 新闻聚合、AI 情绪、市场影响 |
-| **Gate Info for AI** | 市场分析（即将推出） | 链上数据、项目研究、风险评级 |
+### Gate Exchange for AI
+**CEX + TradFi，Agent 全能调用**
+现货、合约、理财、Launchpad、资产管理等全线产品 — 均以结构化 API 暴露，Agent 可直接调用，无需爬取 UI，无需脆弱的变通方案。
 
-📖 **完整文档**: [English](README.md) | [中文](README_ZH.md)
+### Gate DEX for AI
+**Web3 链上交易引擎**
+通过 MCP & Skills 提供 Web3 平台能力，包括行情数据、Swap、Perps 和 Meme 交易，让 Agent 直接操作链上 DEX。
+
+### Gate Wallet for AI
+**为 AI Agent 而生的 Web3 基础设施**
+安全不妥协，交互不繁琐。原生 Wallet 专注极简高效，PluginWallet 打通全生态 DApp 连接，Keygenix 以企业级标准守护资产安全。TEE 物理隔离技术贯穿底层，智能调用与链上资产，始终坚不可摧。
+
+### Gate News for AI
+**实时加密资讯推送**
+通过 MCP & Skills 提供加密资讯与动态能力，支持 Agent 订阅、搜索和分析最新市场信息。
+
+### Gate Info for AI
+**全面的链上数据查询**
+加密信息查询能力，包括币种资料、项目信息、区块数据与地址信息，为 Agent 提供结构化信息与链上数据访问。
+
+📖 **完整文档**: [English](README.md) | [中文](README_zh.md)
 
 ---
 
 ## MCP 集成
 
-Gate for AI 基于**模型上下文协议（MCP）**构建，这是 AI 工具通信的开放标准。
+MCP（模型上下文协议）让 AI 模型能够调用外部系统。在 Web3 中，MCP 使 Agent 能够通过稳定、结构化的端点访问交易所、钱包和链上服务。
 
 ### Gate MCP 服务器
 
@@ -46,21 +58,9 @@ Gate for AI 基于**模型上下文协议（MCP）**构建，这是 AI 工具通
 
 Gate MCP 服务器为 AI 智能体提供 20 多个交易和市场数据工具：
 
-**现货市场工具**：
-- `list_currencies` / `get_currency` - 币种信息
-- `list_currency_pairs` / `get_currency_pair` - 交易对信息
-- `get_spot_tickers` - 市场行情
-- `get_spot_order_book` - 订单簿深度
-- `get_spot_candlesticks` - K 线/历史数据
-- `get_spot_trades` - 成交记录
+- **现货市场工具**：list_currencies, get_currency, list_currency_pairs, get_currency_pair, get_spot_tickers, get_spot_order_book, get_spot_candlesticks, get_spot_trades
+- **合约市场工具**：list_futures_contracts, get_futures_contract, get_futures_tickers, get_futures_order_book, get_futures_candlesticks, get_futures_trades, get_futures_funding_rate, get_futures_premium_index, list_futures_liq_orders
 
-**合约市场工具**：
-- `list_futures_contracts` / `get_futures_contract` - 合约规格
-- `get_futures_tickers` - 合约行情
-- `get_futures_order_book` - 合约订单簿
-- `get_futures_candlesticks` - 合约 K 线
-- `get_futures_funding_rate` - 资金费率历史
-- `list_futures_liq_orders` - 强平记录
 
 📖 **完整 MCP 文档**: [Gate MCP 服务器](https://github.com/gate/gate-mcp)
 
@@ -70,7 +70,7 @@ Gate MCP 服务器为 AI 智能体提供 20 多个交易和市场数据工具：
 
 ### 什么是技能？
 
-**技能**是扩展 AI 智能体能力的模块化包，为特定领域提供专业知识、工作流程和工具。
+**技能**是模块化工具（如获取价格、下单、签名交易、获取资讯）。Gate for AI 将技能打包在五大模块中，让 Agent 能够安全地组合工作流。
 
 ### Gate 技能市场
 
@@ -132,7 +132,6 @@ Gate MCP 服务器为 AI 智能体提供 20 多个交易和市场数据工具：
 ## 资源
 
 - **网站**: [https://www.gate.com/gate-for-ai](https://www.gate.com/gate-for-ai)
-- **Discord**: [加入 Gate 开发者社区](https://discord.gg/gateio)
 - **Twitter**: [@gate_io](https://twitter.com/gate_io)
 - **开发者支持**: `developer@gate.com`
 
@@ -151,12 +150,11 @@ Gate MCP 服务器为 AI 智能体提供 20 多个交易和市场数据工具：
 ---
 
 <p align="center">
-  <strong>由 Gate.io 构建。为加密社区服务。</strong>
+  <strong>由 Gate.com 构建。为加密社区服务。</strong>
 </p>
 
 <p align="center">
   <a href="https://www.gate.com/gate-for-ai">网站</a> •
   <a href="https://github.com/gate/gate-mcp">MCP 服务器</a> •
-  <a href="https://github.com/gate/gate-skills">技能</a> •
-  <a href="https://discord.gg/gateio">Discord</a>
+  <a href="https://github.com/gate/gate-skills">技能</a>
 </p>
