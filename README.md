@@ -56,25 +56,23 @@ MCP (Model Context Protocol) lets AI models call external systems. In Web3, MCP 
 
 ### Gate MCP Server
 
-📁 **Repository**: `https://github.com/gate/gate-mcp`
+📁 **Repository**: [gate/gate-mcp](https://github.com/gate/gate-mcp) · **Endpoint**: `https://api.gatemcp.ai/mcp`
 
-The Gate MCP Server exposes 20+ trading and market data tools for AI agents:
+A Gate MCP server that enables AI agents to interact with the Gate cryptocurrency exchange for market data, trading, and account management.
 
-- **Spot Market Tools** - list_currencies, get_currency, list_currency_pairs, get_currency_pair, get_spot_tickers, get_spot_order_book, get_spot_candlesticks, get_spot_trades
-- **Futures Market Tools** - list_futures_contracts, get_futures_contract, get_futures_tickers, get_futures_order_book, get_futures_candlesticks, get_futures_trades, get_futures_funding_rate, get_futures_premium_index, list_futures_liq_orders
+- 🔍 **Spot & Futures Market** — Tickers, order books, trades, K-line, funding rate, liquidation history
+- 💹 **Trading** — Create/cancel/amend spot and futures orders
+- 💼 **Account & Wallet** — Balances, transfers, deposits, withdrawals, sub-accounts
+- 🔐 **OAuth2** — Secure authorization via Gate account login (all tools require auth)
 
-### Quick Start with MCP
+#### Available Tools
 
-```bash
-# Install Claude CLI
-brew install claude-code
-
-# Add Gate MCP
-claude mcp add --transport http Gate https://api.gatemcp.ai/mcp
-
-# Start using
-claude mcp list
-```
+| Category | Tools |
+|----------|-------|
+| **Market Data** (`market`) | list_currencies, get_currency, list_currency_pairs, get_currency_pair, get_spot_tickers, get_spot_order_book, get_spot_trades, get_spot_candlesticks, list_futures_contracts, get_futures_contract, get_futures_tickers, get_futures_order_book, get_futures_trades, get_futures_candlesticks, get_futures_funding_rate, get_futures_premium_index, list_futures_liq_orders |
+| **Spot Trading** (`trade`) | create_spot_order, create_spot_batch_orders, cancel_spot_order, cancel_all_spot_orders, cancel_spot_batch_orders, amend_spot_order, amend_spot_batch_orders, get_spot_accounts, list_spot_orders, get_spot_order, list_spot_my_trades, get_spot_fee |
+| **Futures Trading** (`trade`) | create_futures_order, create_futures_batch_orders, cancel_futures_order, cancel_all_futures_orders, amend_futures_order, get_futures_accounts, list_futures_positions, list_futures_orders, update_futures_position_leverage, update_futures_position_margin |
+| **Wallet & Account** (`wallet` / `account`) | get_total_balance, create_transfer, list_deposits, list_withdrawals, get_unified_accounts, list_sub_accounts, create_sub_account, list_sub_account_keys, create_sub_account_key |
 
 📖 **Full MCP Documentation**: [Gate MCP Server](https://github.com/gate/gate-mcp)
 
@@ -97,8 +95,14 @@ Available skills for crypto trading and market analysis:
 | [gate-exchange-marketanalysis](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-marketanalysis) | Market tape analysis: liquidity, momentum, liquidation, funding arbitrage, basis, manipulation risk, order book explainer, slippage simulation, breakout, and weekend vs weekday | ✅ Active |
 | [gate-exchange-futures](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-futures) | USDT perpetual futures trading: open/close position, cancel/amend order | ✅ Active |
 | [gate-exchange-spot](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-spot) | Gate spot trading: buy/sell, order management, account queries, and asset swaps | ✅ Active |
-| [gate-dex-market](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-market) | Gate Wallet DEX market data: K-line, transaction stats, liquidity, token info, rankings, security audit, new token discovery | ✅ Active |
-| [gate-mcp-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-installer) | One-click Gate MCP setup & configuration | ✅ Active |
+| [gate-dex-mcpmarket](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpmarket) | Gate Wallet DEX market data: K-line, transaction stats, liquidity, token info, rankings, security audit, new token discovery | ✅ Active |
+| [gate-dex-mcpwallet](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpwallet) | Gate Wallet portfolio assets and transaction history: balance, total assets, token holdings, transfer/swap history | ✅ Active |
+| [gate-dex-mcpswap](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpswap) | Gate Wallet Swap/DEX trading: get quotes, execute Swap across EVM and Solana | ✅ Active |
+| [gate-dex-mcptransfer](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcptransfer) | Gate Wallet transfer execution: native and token transfers across EVM and Solana | ✅ Active |
+| [gate-dex-mcpdapp](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpdapp) | Gate Wallet DApp interaction: connect wallet, sign messages, execute DApp transactions, ERC20 Approve | ✅ Active |
+| [gate-dex-mcpauth](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpauth) | Gate Wallet authentication: Google OAuth login, session management | ✅ Active |
+| [gate-mcp-cursorinstaller](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-cursorinstaller) | One-click installer for Gate MCP and Skills for Cursor | ✅ Active |
+| [gate-mcp-openclawinstaller](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-openclawinstaller) | Complete Gate.com MCP server installer for OpenClaw | ✅ Active |
 
 ### How Skills Work
 
@@ -115,32 +119,40 @@ Available skills for crypto trading and market analysis:
 
 ### Prerequisites
 
-- Node.js >= 18 (for MCP clients)
-- An MCP-compatible AI agent (Claude, Cursor, etc.)
+- Node.js & npm
+- An MCP-compatible AI agent (Cursor, OpenClaw, etc.)
 
-### Installation
+### One-Click Installation
 
-1. **Install Claude CLI**:
-   ```bash
-   brew install claude-code
-   ```
+Get started in seconds with our installer skills:
 
-2. **Add Gate MCP**:
-   ```bash
-   claude mcp add --transport http Gate https://api.gatemcp.ai/mcp
-   ```
+**For Cursor Users** — Use `gate-mcp-cursorinstaller` to install all Gate MCP servers + skills with a single command:
 
-3. **Verify**:
-   ```bash
-   claude mcp list
-   ```
+```bash
+bash skills/gate-mcp-cursorinstaller/scripts/install.sh
+```
 
-4. **Start Using**:
-   ```
-   "Analyze Bitcoin market conditions"
-   "Check ETH funding rates"
-   "Find top 10 coins by volume"
-   ```
+Or simply ask your AI assistant:
+
+```
+"Help me install Gate MCP"
+```
+
+**For OpenClaw Users** — Use `gate-mcp-openclawinstaller` for complete Gate MCP setup with interactive selection:
+
+```bash
+./skills/gate-mcp-openclawinstaller/scripts/install.sh
+```
+
+### Start Using
+
+Once installed, ask your agent in natural language:
+
+```
+"Analyze Bitcoin market conditions"
+"Check ETH funding rates"
+"Find top 10 coins by volume"
+```
 
 ---
 
