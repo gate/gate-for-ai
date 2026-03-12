@@ -86,23 +86,22 @@ A Gate MCP server that enables AI agents to interact with the Gate cryptocurrenc
 
 ### Gate Skills Marketplace
 
-📁 **Repository**: `https://github.com/gate/gate-skills`
+📁 **Repository**: [gate/gate-skills](https://github.com/gate/gate-skills)
 
 Available skills for crypto trading and market analysis:
 
 | Skill | Description | Status |
 |-------|-------------|--------|
+| [gate-mcp-cursor-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-cursor-installer) | One-click installer for Gate MCP and Skills for Cursor | ✅ Active |
+| [gate-mcp-openclaw-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-openclaw-installer) | Complete Gate.com MCP server installer for OpenClaw | ✅ Active |
+| [gate-mcp-claude-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-claude-installer) | One-click installer for Gate MCP and Skills for Claude Code (Claude CLI) | ✅ Active |
+| [gate-mcp-codex-installer](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-codex-installer) | One-click installer for Gate MCP and Skills for Codex | ✅ Active |
 | [gate-exchange-marketanalysis](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-marketanalysis) | Market tape analysis: liquidity, momentum, liquidation, funding arbitrage, basis, manipulation risk, order book explainer, slippage simulation, breakout, and weekend vs weekday | ✅ Active |
 | [gate-exchange-futures](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-futures) | USDT perpetual futures trading: open/close position, cancel/amend order | ✅ Active |
 | [gate-exchange-spot](https://github.com/gate/gate-skills/tree/master/skills/gate-exchange-spot) | Gate spot trading: buy/sell, order management, account queries, and asset swaps | ✅ Active |
-| [gate-dex-mcpmarket](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpmarket) | Gate Wallet DEX market data: K-line, transaction stats, liquidity, token info, rankings, security audit, new token discovery | ✅ Active |
-| [gate-dex-mcpwallet](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpwallet) | Gate Wallet portfolio assets and transaction history: balance, total assets, token holdings, transfer/swap history | ✅ Active |
-| [gate-dex-mcpswap](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpswap) | Gate Wallet Swap/DEX trading: get quotes, execute Swap across EVM and Solana | ✅ Active |
-| [gate-dex-mcptransfer](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcptransfer) | Gate Wallet transfer execution: native and token transfers across EVM and Solana | ✅ Active |
-| [gate-dex-mcpdapp](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpdapp) | Gate Wallet DApp interaction: connect wallet, sign messages, execute DApp transactions, ERC20 Approve | ✅ Active |
-| [gate-dex-mcpauth](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-mcpauth) | Gate Wallet authentication: Google OAuth login, session management | ✅ Active |
-| [gate-mcp-cursorinstaller](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-cursorinstaller) | One-click installer for Gate MCP and Skills for Cursor | ✅ Active |
-| [gate-mcp-openclawinstaller](https://github.com/gate/gate-skills/tree/master/skills/gate-mcp-openclawinstaller) | Complete Gate.com MCP server installer for OpenClaw | ✅ Active |
+| [gate-dex-market](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-market) | Gate DEX market data via OpenAPI: token info, K-line, rankings, security audit | ✅ Active |
+| [gate-dex-trade](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-trade) | Gate DEX trading: MCP + OpenAPI dual mode, smart routing for Swap execution | ✅ Active |
+| [gate-dex-wallet](https://github.com/gate/gate-skills/tree/master/skills/gate-dex-wallet) | Gate DEX comprehensive wallet: authentication, assets, transfers, DApp interactions | ✅ Active |
 
 ### How Skills Work
 
@@ -120,28 +119,23 @@ Available skills for crypto trading and market analysis:
 ### Prerequisites
 
 - Node.js & npm
-- An MCP-compatible AI agent (Cursor, OpenClaw, etc.)
+- An MCP-compatible AI agent (Cursor, OpenClaw, Claude Code, Codex, etc.)
 
 ### One-Click Installation
 
 Get started in seconds with our installer skills:
 
-**For Cursor Users** — Use `gate-mcp-cursorinstaller` to install all Gate MCP servers + skills with a single command:
-
-```bash
-bash skills/gate-mcp-cursorinstaller/scripts/install.sh
-```
+| Platform | Installer Skill | Command |
+|----------|----------------|---------|
+| **Cursor** | `gate-mcp-cursor-installer` | `bash skills/gate-mcp-cursor-installer/scripts/install.sh` |
+| **OpenClaw** | `gate-mcp-openclaw-installer` | `./skills/gate-mcp-openclaw-installer/scripts/install.sh` |
+| **Claude Code** | `gate-mcp-claude-installer` | `bash skills/gate-mcp-claude-installer/scripts/install.sh` |
+| **Codex** | `gate-mcp-codex-installer` | `bash skills/gate-mcp-codex-installer/scripts/install.sh` |
 
 Or simply ask your AI assistant:
 
 ```
-"Help me install Gate MCP"
-```
-
-**For OpenClaw Users** — Use `gate-mcp-openclawinstaller` for complete Gate MCP setup with interactive selection:
-
-```bash
-./skills/gate-mcp-openclawinstaller/scripts/install.sh
+"Help me auto install Gate Skills and MCPs: https://github.com/gate/gate-skills"
 ```
 
 ### Start Using
